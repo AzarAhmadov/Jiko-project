@@ -1,0 +1,918 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  text-decoration: none !important;
+  list-style: none !important;
+  outline: none;
+}
+
+* body #header {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  margin-top: 52px;
+}
+
+* body #header .container-fluid {
+  max-width: 1460px;
+}
+
+* body #header .container-fluid .header-col .logo-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body #header .container-fluid .header-col .logo-section svg {
+  margin-right: 8px;
+}
+
+* body #header .container-fluid .header-col .logo-section .logo {
+  font-family: Nirmala UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #005FFE;
+}
+
+* body #header .container-fluid .nav-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body #header .container-fluid .nav-col nav ul {
+  margin: 0;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* body #header .container-fluid .nav-col nav ul li {
+  margin-left: 50px;
+  white-space: nowrap;
+}
+
+* body #header .container-fluid .nav-col nav ul li:last-child {
+  margin-right: 0;
+}
+
+* body #header .container-fluid .nav-col nav ul li a {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.22px;
+  color: #2128BD;
+}
+
+* body #header .container-fluid .nav-col nav ul li button {
+  background: rgba(1, 96, 254, 0.1);
+  border-radius: 26.4px;
+  width: 134px;
+  height: 50px;
+  padding: 13px 25px;
+  color: #0160FE;
+  border: none;
+}
+
+* body main #banner .container .banner-row .banner-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body main #banner .container .banner-row .banner-left {
+  padding-top: 115px;
+}
+
+* body main #banner .container .banner-row .banner-left h1 {
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 82px;
+  white-space: nowrap;
+  letter-spacing: -5.97px;
+}
+
+* body main #banner .container .banner-row .banner-left p {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+  color: #130F49;
+  opacity: 0.9;
+  margin-top: 33px;
+  margin-bottom: 65px;
+}
+
+* body main #banner .container .banner-row .banner-left .banner-btn {
+  background: #4F86FF;
+  border-radius: 20px;
+  width: 182px;
+  height: 79px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  border: none;
+  color: #FFFFFF;
+}
+
+* body main #banner .container .banner-row .banner-right {
+  padding-top: 90px;
+  position: relative;
+}
+
+* body main #banner .container .banner-row .banner-right .phone {
+  width: 542px;
+  height: 542px;
+}
+
+* body main #banner .container .banner-row .banner-right .abs-img {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+}
+
+* body main #slider {
+  padding-top: 144px;
+}
+
+* body main #slider .container {
+  max-width: 1050px;
+}
+
+* body main #slider .container .swiper .swiper-wrapper {
+  padding-bottom: 56px;
+}
+
+* body main #slider .container .swiper .swiper-wrapper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body main #slider .container .swiper .swiper-wrapper .swiper-slide .swiper-item {
+  background: #FFFFFF;
+  border: 1px solid #CDE4F9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 24px;
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+
+* body main #slider .container .swiper .swiper-wrapper .swiper-slide .swiper-item::before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  background: url("../img/color.png");
+  width: 96px;
+  bottom: 15px;
+  height: 96px;
+  background-repeat: no-repeat;
+}
+
+* body main #slider .container .swiper .swiper-wrapper .swiper-slide .swiper-item .swip-title {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  padding-top: 24px;
+  display: block;
+  color: #0F1C49;
+  padding-left: 24px;
+}
+
+* body main #slider .container .swiper .swiper-wrapper .swiper-slide .swiper-item .swip-content {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 12px;
+  padding-left: 24px;
+  letter-spacing: 0.0052em;
+  color: #130F49;
+}
+
+* body main #slider .container .swiper .swiper-wrapper .swiper-slide .swiper-item .swip-btn {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  padding-top: 39px;
+  display: block;
+  padding-left: 24px;
+  letter-spacing: 0.0052em;
+  color: #4F86FF;
+}
+
+* body main #table {
+  position: relative;
+  padding-top: 72px;
+}
+
+* body main #table::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-image: url("../img/Rectangle 151.png");
+}
+
+* body main #table .table-title {
+  text-align: center;
+  letter-spacing: -2.32px;
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  color: #0F1C49;
+  margin-bottom: 44px;
+}
+
+* body main #table .container {
+  max-width: 1040px;
+}
+
+* body main #table .container .cs-table {
+  height: 561px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+* body main #table .container .cs-table .tb-header {
+  padding-top: 40px;
+  margin-left: 32px;
+  margin-right: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 0.8px solid #CDE4F9;
+}
+
+* body main #table .container .cs-table .tb-header span {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.078px;
+  color: #88A1BE;
+}
+
+* body main #table .container .cs-table .tb-header .one {
+  padding-right: 222px;
+}
+
+* body main #table .container .cs-table .tb-header .two {
+  padding-right: 178px;
+}
+
+* body main #table .container .cs-table .tb-header .three {
+  padding-right: 100px;
+}
+
+* body main #table .container .cs-table .tb-header .four {
+  padding-right: 91px;
+}
+
+* body main #table .container .cs-table .tb-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 32px;
+  margin-right: 32px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  border-bottom: 0.8px solid #CDE4F9;
+}
+
+* body main #table .container .cs-table .tb-row .bir {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  color: #130F49;
+}
+
+* body main #table .container .cs-table .tb-row .bir img {
+  width: 36px;
+  height: 36px;
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+* body main #table .container .cs-table .tb-row .bir .iki {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+}
+
+* body main #table .container .cs-table .tb-row .bir .iki .btc {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-right: 125px;
+  letter-spacing: -0.4px;
+}
+
+* body main #table .container .cs-table .tb-row .bir .iki .btc.btc2 {
+  margin-right: 100px;
+}
+
+* body main #table .container .cs-table .tb-row .bir .iki .btc.btc3 {
+  margin-right: 119px;
+}
+
+* body main #table .container .cs-table .tb-row .bir .iki .btc.btc4 {
+  margin-right: 95px;
+}
+
+* body main #table .container .cs-table .tb-row .rp {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  color: #130F49;
+  margin-right: 90px;
+}
+
+* body main #table .container .cs-table .tb-row .rp.rp2 {
+  margin-right: 94px;
+}
+
+* body main #table .container .cs-table .tb-row .rp.rp3 {
+  margin-right: 133px;
+}
+
+* body main #table .container .cs-table .tb-row .rp.rp4 {
+  margin-right: 136px;
+}
+
+* body main #table .container .cs-table .tb-row .grn {
+  margin-right: 122px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  color: #12D790;
+}
+
+* body main #table .container .cs-table .tb-row .grn.grn-2 {
+  margin-right: 127px;
+}
+
+* body main #table .container .cs-table .tb-row button {
+  margin-left: 70px;
+  background: #4F86FF;
+  border-radius: 12px;
+  width: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 24px;
+  height: 47px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+* body main #table .container .cs-table .tb-row button.btn2 {
+  margin-left: 75px;
+}
+
+* body main #table .container .cs-table .tb-row button.btn3 {
+  margin-left: 80px;
+}
+
+* body main #table .container .cs-table .tb-row button.btn4 {
+  margin-left: 79px;
+}
+
+* body main #text {
+  padding-top: 160px;
+}
+
+* body main #text .container .row .col-lg-6 .content1 {
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 64px;
+  letter-spacing: -2.32px;
+  color: #130F49;
+  position: relative;
+  top: -20px;
+}
+
+* body main #text .container .row .col-lg-6 .content2 {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: -1px;
+  color: #130F49;
+  opacity: 0.4;
+}
+
+* body main #text .container .row .ct-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+* body main #port {
+  padding-top: 110px;
+}
+
+* body main #port .container .row .col-lg-6 .port-left-item {
+  width: 733px;
+  height: 533px;
+}
+
+* body main #port .container .row .col-lg-6 .port-left-item img {
+  width: 100%;
+  height: 100%;
+}
+
+* body main #port .container .row .col-lg-6 .posit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body main #port .container .row .col-lg-6 .posit .port-right-item {
+  position: relative;
+}
+
+* body main #port .container .row .col-lg-6 .posit .port-right-item h5 {
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.01em;
+  color: #130F49;
+  margin-bottom: 20px;
+}
+
+* body main #port .container .row .col-lg-6 .posit .port-right-item p {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 65px;
+  letter-spacing: -0.01em;
+  color: #130F49;
+  opacity: 0.4;
+  width: 265px;
+}
+
+* body main #port .container .row .col-lg-6 .posit .port-right-item p.cnt2 {
+  width: 309px;
+}
+
+* body main #port .container .row .col-lg-6 .posit .port-right-item p.cnt3 {
+  width: 265px;
+}
+
+* body main #port .container .row .col-lg-6 .posit .port-right-item .port-abs {
+  position: absolute;
+  top: -14px;
+  left: -80px;
+}
+
+* body main #port .container .row .col-lg-6 .posit .port-right-item .port-abs img {
+  width: 60px;
+  height: 60px;
+}
+
+* body main #app {
+  padding-top: 140px;
+}
+
+* body main #app .container .row .col-lg-6 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body main #app .container .row .col-lg-6 .app-item h4 {
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 64px;
+  /* or 123% */
+  letter-spacing: -2.32px;
+  color: #130F49;
+}
+
+* body main #app .container .row .col-lg-6 .app-item p {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  /* or 158% */
+  letter-spacing: -1px;
+  color: #130F49;
+  opacity: 0.4;
+  width: 357px;
+  padding-top: 36px;
+  padding-bottom: 56px;
+}
+
+* body main #app .container .row .col-lg-6 .app-item .btn-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* body main #app .container .row .col-lg-6 .app-item .btn-flex a {
+  margin-right: 22px;
+}
+
+* body main #app .container .row .col-lg-6 .right-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body main #app .container .row .col-lg-6 .right-item .img-abs {
+  position: absolute;
+  bottom: 0px;
+  z-index: -1;
+}
+
+* body main #app .container .row .col-lg-6 .right-item .img-abs img {
+  width: 515px;
+}
+
+* body main #register {
+  padding-top: 200px;
+}
+
+* body main #register .register-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body main #register .register-title h2 {
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -2.32px;
+  color: #130F49;
+  padding-bottom: 20px;
+}
+
+* body main #register .register-title p {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #130F49;
+  opacity: 0.4;
+}
+
+* body main #register .container {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+* body main #register .container .row .col-lg-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body main #register .container .row .col-lg-4 .register-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 90px;
+  text-align: center;
+}
+
+* body main #register .container .row .col-lg-4 .register-item img {
+  width: 166px;
+  height: 166px;
+}
+
+* body main #register .container .row .col-lg-4 .register-item span {
+  padding-top: 12px;
+  padding-bottom: 16px;
+  font-family: Spartan;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 34px;
+  /* identical to box height, or 142% */
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #130F49;
+}
+
+* body main #register .container .row .col-lg-4 .register-item p {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  /* or 140% */
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #130F49;
+  opacity: 0.4;
+}
+
+* body main #register .container .row .col-lg-4 .register-item p.two {
+  width: 310px;
+}
+
+* body main #partner {
+  padding-top: 180px;
+}
+
+* body main #partner h2 {
+  text-align: center;
+  font-family: Spartan;
+  padding-bottom: 90px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -2.32px;
+  color: #130F49;
+}
+
+* body main #partner .container .swiper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 58px;
+}
+
+* body main #join {
+  padding-top: 220px;
+}
+
+* body main #join .container .row .col-lg-6 .left-item span {
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 64px;
+  /* or 123% */
+  letter-spacing: -2.32px;
+  color: #130F49;
+}
+
+* body main #join .container .row .col-lg-6 .left-item p {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  /* identical to box height, or 158% */
+  letter-spacing: -1px;
+  margin-top: 30px;
+  color: #130F49;
+  margin-bottom: 58px;
+  opacity: 0.4;
+}
+
+* body main #join .container .row .col-lg-6 .left-item .join-btn {
+  color: #fff;
+  background: #4F86FF;
+  border-radius: 20px;
+  width: 175px;
+  height: 79px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  text-align: center;
+  color: #FFFFFF;
+}
+
+* body #footer {
+  padding-top: 190px;
+  padding-bottom: 69px;
+}
+
+* body #footer .container-fluid {
+  max-width: 1460px;
+  height: 36px;
+}
+
+* body #footer .container-fluid .col-4 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body #footer .container-fluid .col-4 .logo svg {
+  margin-right: 8px;
+}
+
+* body #footer .container-fluid .col-4 .logo .logo {
+  font-family: Nirmala UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #005FFE;
+}
+
+* body #footer .container-fluid .col-4 nav ul {
+  height: 36px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body #footer .container-fluid .col-4 nav ul li {
+  margin-right: 60px;
+}
+
+* body #footer .container-fluid .col-4 nav ul li a {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+  letter-spacing: -0.22px;
+  color: #130F49;
+}
+
+* body #footer .container-fluid .col-4 span {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+  letter-spacing: -0.22px;
+  color: #130F49;
+  opacity: 0.4;
+}
+/*# sourceMappingURL=style.css.map */

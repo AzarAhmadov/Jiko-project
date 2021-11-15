@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiko</title>
+    <link rel="stylesheet" href="assets/stil/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Spartan:wght@400;500;600&family=Work+Sans:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Work+Sans:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+<body>
+
+
+
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row header-col">
+                <div class="col-6 logo-col">
+                    <div class="logo-section">
+                        <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.6497 14.8301L16.0016 15.4645L13.4869 17.9203L10.9723 20.374L13.4869 22.8305L16.0016 25.2857L18.5169 27.7401L19.8598 29.0584H24.887L23.5441 27.7435L21.0281 25.2891L18.5169 22.8305L16.0023 20.374L18.5169 17.9203L19.4831 16.9747L16.6497 14.8301ZM26.615 9.99306L25.4524 11.1285H25.4672L24.8884 11.6938L23.5455 13.0086L23.2628 13.2847L23.1215 13.4186L19.4817 16.9733L16.6546 14.8281L20.4287 11.1285L24.2021 7.4275L24.2078 7.43164L26.0298 5.65224L32.0048 9.02053V36H14.2227V32.5275H28.4434V11.0263L26.6143 9.99099L26.615 9.99306ZM-0.000183105 11.1285V36H10.667V10.8476L7.11124 12.6104V32.5275H3.55553V11.0249L15.9995 4.00813L20.2294 6.39423L22.8282 3.84938L15.9995 0L7.99893 4.50923L-0.000183105 9.01846V11.1285Z"
+                                fill="#005FFE" />
+                        </svg>
+                        <a class="logo" href="#"> JIKO </a>
+                    </div>
+                </div>
+                <div class="col-6 nav-col">
+                    <nav>
+                        <ul>
+                            <li><a href="#"> Prices </a></li>
+                            <li><a href="#"> Learn </a></li>
+                            <li><a href="#"> Individuals </a></li>
+                            <li><a href="#"> Resources <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.64625 7.0203C5.84151 7.21556 6.1581 7.21556 6.35336 7.0203L11.6867 1.68697C11.882 1.49171 11.882 1.17512 11.6867 0.979861C11.4914 0.784599 11.1748 0.784599 10.9796 0.979861L5.99981 5.95964L1.02003 0.979861C0.824765 0.784599 0.508182 0.784599 0.31292 0.979861C0.117658 1.17512 0.117658 1.49171 0.31292 1.68697L5.64625 7.0203Z"
+                                            fill="#2128BD" />
+                                    </svg>
+                                </a>
+                              
+                            </li>
+                            <li><a href="#"> Sign In </a></li>
+                            <li> <button> Get Started </button> </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="banner" class="banner">
+            <div class="container">
+                <div class="row banner-row">
+                    <div class="banner-col d-flex justify-content-center  col-lg-6">
+                        <div class="banner-left">
+                            <h1> The easiest way to <br> buy & sell <br> cryptocurrency</h1>
+                            <p>Invest in jiko — all in one place. <svg width="24" height="32" viewBox="0 0 24 32"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M23.6345 28.6619C21.8616 31.4134 17.6232 32.1013 11.7057 31.9885C5.78813 31.8735 2.58651 30.1527 1.36684 29.417C0.147177 28.6836 -0.290596 27.2384 0.192915 26.62C0.676425 25.9994 0.399822 21.8243 0.42378 20.6547C0.44556 19.4829 1.27537 17.8099 1.29715 16.0197C1.32111 14.2295 1.57375 14.0016 3.20941 12.1875C4.56629 10.6837 7.00344 9.60526 7.79187 9.28193C7.95304 9.21683 8.04451 9.18211 8.04451 9.18211C7.86157 8.46603 7.34386 7.81438 7.10145 7.20961C5.25671 2.60581 3.20941 1.33769 3.20941 1.33769L5.81209 1.31382C5.7424 0.866803 6.55914 0.717076 7.18204 0.717076H11.5641H11.7754C12.3286 -0.0749619 15.1251 -0.109681 16.2664 0.131185C17.2878 0.346012 17.2269 1.08814 17.2029 1.24004V1.24221C17.2007 1.25957 17.1985 1.26825 17.1985 1.26825C18.1656 1.02738 20.0408 1.22268 20.0408 1.22268C18.5053 2.09717 16.9111 5.19155 16.1967 7.43963C16.005 8.04939 15.772 8.48122 15.589 8.76331C15.4017 9.05192 15.2645 9.18211 15.2645 9.18211C15.2645 9.18211 15.3516 9.21683 15.5041 9.28193C16.225 9.59007 18.3964 10.5514 19.6509 11.4888C21.169 12.6237 22.4126 14.7915 22.3451 15.653C22.2754 16.5123 22.6544 18.5086 23.0007 19.5415C23.347 20.5744 23.3796 25.4959 23.4145 26.2511C23.4493 27.0084 24.5557 27.4445 23.6345 28.6619Z"
+                                        fill="#EAB876" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.6099 7.38969C10.325 7.54875 10.2316 5.43585 9.40133 3.50067C8.9176 2.37273 8.16359 1.45309 7.36035 0.717041H11.5638C12.1083 3.538 11.1217 7.10325 10.6099 7.38969Z"
+                                        fill="#CB935F" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.041 1.22267C18.5055 2.09717 16.9112 5.19154 16.1968 7.43963C16.0052 8.04939 15.7721 8.48121 15.5892 8.76331C15.4041 8.50074 15.0578 7.66964 15.4803 5.32391C15.82 3.44472 16.6281 2.04292 17.2031 1.2422C17.2009 1.25956 17.1987 1.26824 17.1987 1.26824C18.1657 1.02738 20.041 1.22267 20.041 1.22267Z"
+                                        fill="#CB935F" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M23.6345 28.662C21.8616 31.4135 17.6232 32.1013 11.7057 31.9885C5.78813 31.8735 2.58651 30.1527 1.36684 29.4171C0.147177 28.6837 -0.290596 27.2385 0.192915 26.62C0.676425 25.9994 0.399822 21.8244 0.42378 20.6548C0.44556 19.483 1.27537 17.8099 1.29715 16.0197C1.32111 14.2295 1.57375 14.0017 3.20941 12.1876C4.56629 10.6838 7.00344 9.60531 7.79187 9.28198H15.5041C16.225 9.59012 18.3964 10.5514 19.6509 11.4888C21.169 12.6237 22.4126 14.7915 22.3451 15.653C22.2754 16.5123 22.6544 18.5087 23.0007 19.5416C23.347 20.5745 23.3796 25.496 23.4145 26.2511C23.4493 27.0084 24.5557 27.4446 23.6345 28.662Z"
+                                        fill="#CB935F" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.50397 12.9815C8.41794 13.1607 8.05487 13.8935 8.05661 13.4524L8.18141 10.3847C8.19317 9.75236 7.51386 10.2686 7.22593 10.7503C6.23822 12.4036 4.91336 13.9977 4.4109 16.8015C4.32465 17.2832 3.91999 17.4805 3.90931 17.267C3.85334 16.1308 3.99338 14.313 5.08455 12.4824C6.70322 9.76668 4.45403 12.276 4.00515 12.8956C3.55605 13.5149 2.32113 15.2011 1.73395 18.4016C1.14677 21.6021 0.693316 25.5575 1.71108 27.0852C5.07301 32.1325 21.5256 30.4942 21.9747 27.8653C22.3433 25.7088 22.3548 22.8409 21.0768 20.1912C20.3221 18.6264 21.0691 19.5011 21.7818 20.4891C21.9734 20.755 22.394 20.5848 22.3463 20.2613C22.0246 18.0885 21.621 14.8926 19.5108 13.0904C18.8659 12.5397 20.5691 14.6639 20.4208 16.4237C20.4046 16.6157 20.1328 16.6474 20.0668 16.4665C19.611 15.2152 18.3946 12.2558 16.4584 10.2469C16.3159 10.0991 16.074 10.2632 16.1582 10.45C16.491 11.1889 16.9558 12.2845 17.2481 13.2451C17.3117 13.4535 17.024 13.5797 16.9147 13.3914C16.148 12.0712 14.7772 10.0509 13.5469 10.0047C11.9092 9.9431 13.5331 11.2859 13.4735 13.0231C13.4669 13.2161 13.2051 13.271 13.1226 13.0965C12.8974 12.6206 12.5271 11.8854 12.0386 11.0741C11.4549 10.1045 9.80531 10.172 9.3157 11.1919L8.50397 12.9815Z"
+                                        fill="#EAB876" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.9751 22.6619C14.9751 24.0884 13.9077 25.1094 12.0946 25.2212V26.9135H11.1441V25.2073C10.0621 25.0814 9.0385 24.6478 8.17578 23.8367L8.95076 22.9696C9.76961 23.7388 10.8224 24.1304 11.7582 24.1304C12.8403 24.1304 13.6299 23.6129 13.6299 22.7458C13.6299 21.7389 12.7964 21.4032 11.4512 20.9837C9.85735 20.5082 8.38049 20.0187 8.38049 18.3544C8.38049 17.0118 9.37481 15.9769 11.1441 15.879V14.1309H12.0946V15.935C13.0011 16.0748 13.9808 16.4664 14.6388 16.9699L13.9077 17.823C13.1474 17.2915 12.1677 16.9979 11.4512 16.9979C10.4276 16.9979 9.71112 17.4734 9.71112 18.2845C9.71112 19.1656 10.6031 19.4733 11.8167 19.8509C13.6153 20.4103 14.9751 20.8718 14.9751 22.6619Z"
+                                        fill="white" />
+                                    <path d="M8.04492 9.18272H15.2638" stroke="#B07845" stroke-width="0.576"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </p>
+                            <button class="banner-btn">
+                                Start Now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="banner-col-2 d-flex justify-content-center col-lg-6">
+                        <div class="banner-right">
+                            <img class="phone" src="./assets/img/Mask Group.png">
+                            <div class="abs-img">
+                                <img src="./assets/img/Ellipse 39.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="slider" class="slider">
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <span class="swip-title">
+                                    BUY AND SELL CRYPTO
+                                </span>
+                                <p class="swip-content">Buy and sell popular <br> digital currencies</p>
+                                <a href="#" class="swip-btn"> Buy Now <svg width="8" height="12" viewBox="0 0 8 12"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.02021 5.64641C7.21547 5.84167 7.21547 6.15825 7.02021 6.35351L1.68688 11.6868C1.49161 11.8821 1.17503 11.8821 0.979769 11.6868C0.784506 11.4916 0.784506 11.175 0.979769 10.9797L5.95955 5.99996L0.979769 1.02018C0.784507 0.824917 0.784507 0.508334 0.979769 0.313072C1.17503 0.11781 1.49161 0.11781 1.68688 0.313072L7.02021 5.64641Z"
+                                            fill="#4F86FF" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <span class="swip-title">
+                                    BUY AND SELL CRYPTO
+                                </span>
+                                <p class="swip-content">Buy and sell popular <br> digital currencies</p>
+                                <a href="#" class="swip-btn"> Buy Now <svg width="8" height="12" viewBox="0 0 8 12"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.02021 5.64641C7.21547 5.84167 7.21547 6.15825 7.02021 6.35351L1.68688 11.6868C1.49161 11.8821 1.17503 11.8821 0.979769 11.6868C0.784506 11.4916 0.784506 11.175 0.979769 10.9797L5.95955 5.99996L0.979769 1.02018C0.784507 0.824917 0.784507 0.508334 0.979769 0.313072C1.17503 0.11781 1.49161 0.11781 1.68688 0.313072L7.02021 5.64641Z"
+                                            fill="#4F86FF" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <span class="swip-title">
+                                    BUY AND SELL CRYPTO
+                                </span>
+                                <p class="swip-content">Buy and sell popular <br> digital currencies</p>
+                                <a href="#" class="swip-btn"> Buy Now <svg width="8" height="12" viewBox="0 0 8 12"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.02021 5.64641C7.21547 5.84167 7.21547 6.15825 7.02021 6.35351L1.68688 11.6868C1.49161 11.8821 1.17503 11.8821 0.979769 11.6868C0.784506 11.4916 0.784506 11.175 0.979769 10.9797L5.95955 5.99996L0.979769 1.02018C0.784507 0.824917 0.784507 0.508334 0.979769 0.313072C1.17503 0.11781 1.49161 0.11781 1.68688 0.313072L7.02021 5.64641Z"
+                                            fill="#4F86FF" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <span class="swip-title">
+                                    BUY AND SELL CRYPTO
+                                </span>
+                                <p class="swip-content">Buy and sell popular <br> digital currencies</p>
+                                <a href="#" class="swip-btn"> Buy Now <svg width="8" height="12" viewBox="0 0 8 12"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.02021 5.64641C7.21547 5.84167 7.21547 6.15825 7.02021 6.35351L1.68688 11.6868C1.49161 11.8821 1.17503 11.8821 0.979769 11.6868C0.784506 11.4916 0.784506 11.175 0.979769 10.9797L5.95955 5.99996L0.979769 1.02018C0.784507 0.824917 0.784507 0.508334 0.979769 0.313072C1.17503 0.11781 1.49161 0.11781 1.68688 0.313072L7.02021 5.64641Z"
+                                            fill="#4F86FF" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <span class="swip-title">
+                                    BUY AND SELL CRYPTO
+                                </span>
+                                <p class="swip-content">Buy and sell popular <br> digital currencies</p>
+                                <a href="#" class="swip-btn"> Buy Now <svg width="8" height="12" viewBox="0 0 8 12"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.02021 5.64641C7.21547 5.84167 7.21547 6.15825 7.02021 6.35351L1.68688 11.6868C1.49161 11.8821 1.17503 11.8821 0.979769 11.6868C0.784506 11.4916 0.784506 11.175 0.979769 10.9797L5.95955 5.99996L0.979769 1.02018C0.784507 0.824917 0.784507 0.508334 0.979769 0.313072C1.17503 0.11781 1.49161 0.11781 1.68688 0.313072L7.02021 5.64641Z"
+                                            fill="#4F86FF" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="table">
+            <h2 class="table-title">
+                Top Cryptocurrency
+            </h2>
+            <div class="container">
+                <div class="cs-table">
+                    <div class="tb-header">
+                        <span class="one"> Currency </span>
+                        <span class="two"> Price </span>
+                        <span class="three"> 24h Change </span>
+                        <span class="four"> Chart </span>
+                        <span class="five"> Trade</span>
+                    </div>
+                    <div class="tb-row">
+                        <span class="bir"> 1 <img src="./assets/img/color.png"> <span class="iki"> Bitcoin <span
+                                    class="btc">btc</span> </span> </span>
+                        <span class="rp"> Rp 534,226,452 </span>
+                        <span class="grn">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.11669 4.75413C6.96114 4.63746 6.74725 4.63746 6.59169 4.75413L1.92503 8.25413C1.77438 8.36711 1.71293 8.56383 1.77248 8.74247C1.83203 8.92112 1.99921 9.04163 2.18753 9.04163H11.5209C11.7092 9.04163 11.8764 8.92112 11.9359 8.74247C11.9955 8.56383 11.934 8.36711 11.7834 8.25413L7.11669 4.75413Z"
+                                    fill="#12D790" />
+                            </svg>
+                            4.65%</span>
+                        <span>
+                            <svg width="55" height="22" viewBox="0 0 55 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.92035 15.9138L0 13.3599V21.5H55V18.9785L54.0265 15.9138H52.5664C52.7286 13.7004 52.9558 9.47805 52.5664 10.2953C52.0796 11.3169 50.6195 15.9138 49.646 15.9138C48.8673 15.9138 48.3481 14.8923 48.1858 14.3815L45.7522 10.2953L44.292 11.8276L42.8319 13.3599L41.3717 20L40.3982 18.9785L38.4513 15.9138L36.9911 14.3815V8.2522C36.9911 7.43497 36.6667 3.48497 35.0442 1.61212L32.1239 5.18754L29.6903 13.3599L28.2301 10.2953L26.2832 6.71986V1.61212L23.3628 0.079794C22.5841 -0.328826 22.3894 0.931085 22.3894 1.61212L20.9292 5.18754L19.469 6.71986V1.61212L17.5221 5.18754L16.5487 11.8276L14.115 18.9785V11.8276L12.6549 6.71986L9.73451 9.27374L6.32743 5.18754V9.27374L4.86726 14.3815V18.9785L2.92035 20V15.9138Z"
+                                    fill="url(#paint0_linear_1_1577)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_1_1577" x1="27" y1="-14" x2="28" y2="19.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF35A2" />
+                                        <stop offset="1" stop-color="#FF35A2" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <button> Buy </button>
+                    </div>
+                    <div class="tb-row">
+                        <span class="bir"> 2 <img src="./assets/img/color.png"> <span class="iki"> Ethereum <span
+                                    class="btc btc2">ETH</span> </span> </span>
+                        <span class="rp rp2"> Rp 36,843,320 </span>
+                        <span class="grn grn-2">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.11669 4.75413C6.96114 4.63746 6.74725 4.63746 6.59169 4.75413L1.92503 8.25413C1.77438 8.36711 1.71293 8.56383 1.77248 8.74247C1.83203 8.92112 1.99921 9.04163 2.18753 9.04163H11.5209C11.7092 9.04163 11.8764 8.92112 11.9359 8.74247C11.9955 8.56383 11.934 8.36711 11.7834 8.25413L7.11669 4.75413Z"
+                                    fill="#12D790" />
+                            </svg>
+                            1.47%</span>
+                        <span>
+                            <svg width="55" height="22" viewBox="0 0 55 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.92035 15.9138L0 13.3599V21.5H55V18.9785L54.0265 15.9138H52.5664C52.7286 13.7004 52.9558 9.47805 52.5664 10.2953C52.0796 11.3169 50.6195 15.9138 49.646 15.9138C48.8673 15.9138 48.3481 14.8923 48.1858 14.3815L45.7522 10.2953L44.292 11.8276L42.8319 13.3599L41.3717 20L40.3982 18.9785L38.4513 15.9138L36.9911 14.3815V8.2522C36.9911 7.43497 36.6667 3.48497 35.0442 1.61212L32.1239 5.18754L29.6903 13.3599L28.2301 10.2953L26.2832 6.71986V1.61212L23.3628 0.079794C22.5841 -0.328826 22.3894 0.931085 22.3894 1.61212L20.9292 5.18754L19.469 6.71986V1.61212L17.5221 5.18754L16.5487 11.8276L14.115 18.9785V11.8276L12.6549 6.71986L9.73451 9.27374L6.32743 5.18754V9.27374L4.86726 14.3815V18.9785L2.92035 20V15.9138Z"
+                                    fill="url(#paint0_linear_1_1577)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_1_1577" x1="27" y1="-14" x2="28" y2="19.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF35A2" />
+                                        <stop offset="1" stop-color="#FF35A2" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <button class="btn2"> Buy </button>
+                    </div>
+                    <div class="tb-row">
+                        <span class="bir"> 3 <img src="./assets/img/color.png"> <span class="iki"> Tether <span
+                                    class="btc btc3">USDT</span> </span> </span>
+                        <span class="rp rp3">Rp 14,263 </span>
+                        <span class="grn">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.11669 4.75413C6.96114 4.63746 6.74725 4.63746 6.59169 4.75413L1.92503 8.25413C1.77438 8.36711 1.71293 8.56383 1.77248 8.74247C1.83203 8.92112 1.99921 9.04163 2.18753 9.04163H11.5209C11.7092 9.04163 11.8764 8.92112 11.9359 8.74247C11.9955 8.56383 11.934 8.36711 11.7834 8.25413L7.11669 4.75413Z"
+                                    fill="#12D790" />
+                            </svg>
+                            090%</span>
+                        <span>
+                            <svg width="55" height="22" viewBox="0 0 55 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.92035 15.9138L0 13.3599V21.5H55V18.9785L54.0265 15.9138H52.5664C52.7286 13.7004 52.9558 9.47805 52.5664 10.2953C52.0796 11.3169 50.6195 15.9138 49.646 15.9138C48.8673 15.9138 48.3481 14.8923 48.1858 14.3815L45.7522 10.2953L44.292 11.8276L42.8319 13.3599L41.3717 20L40.3982 18.9785L38.4513 15.9138L36.9911 14.3815V8.2522C36.9911 7.43497 36.6667 3.48497 35.0442 1.61212L32.1239 5.18754L29.6903 13.3599L28.2301 10.2953L26.2832 6.71986V1.61212L23.3628 0.079794C22.5841 -0.328826 22.3894 0.931085 22.3894 1.61212L20.9292 5.18754L19.469 6.71986V1.61212L17.5221 5.18754L16.5487 11.8276L14.115 18.9785V11.8276L12.6549 6.71986L9.73451 9.27374L6.32743 5.18754V9.27374L4.86726 14.3815V18.9785L2.92035 20V15.9138Z"
+                                    fill="url(#paint0_linear_1_1577)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_1_1577" x1="27" y1="-14" x2="28" y2="19.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF35A2" />
+                                        <stop offset="1" stop-color="#FF35A2" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <button class="btn3"> Buy </button>
+                    </div>
+                    <div class="tb-row">
+                        <span class="bir"> 4 <img src="./assets/img/color.png"> <span class="iki">Dogecoin <span
+                                    class="btc btc4">DOGE</span> </span> </span>
+                        <span class="rp rp4"> Rp 4,579</span>
+                        <span class="grn">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.11669 4.75413C6.96114 4.63746 6.74725 4.63746 6.59169 4.75413L1.92503 8.25413C1.77438 8.36711 1.71293 8.56383 1.77248 8.74247C1.83203 8.92112 1.99921 9.04163 2.18753 9.04163H11.5209C11.7092 9.04163 11.8764 8.92112 11.9359 8.74247C11.9955 8.56383 11.934 8.36711 11.7834 8.25413L7.11669 4.75413Z"
+                                    fill="#12D790" />
+                            </svg>
+                            3.06%</span>
+                        <span>
+                            <svg width="55" height="22" viewBox="0 0 55 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.92035 15.9138L0 13.3599V21.5H55V18.9785L54.0265 15.9138H52.5664C52.7286 13.7004 52.9558 9.47805 52.5664 10.2953C52.0796 11.3169 50.6195 15.9138 49.646 15.9138C48.8673 15.9138 48.3481 14.8923 48.1858 14.3815L45.7522 10.2953L44.292 11.8276L42.8319 13.3599L41.3717 20L40.3982 18.9785L38.4513 15.9138L36.9911 14.3815V8.2522C36.9911 7.43497 36.6667 3.48497 35.0442 1.61212L32.1239 5.18754L29.6903 13.3599L28.2301 10.2953L26.2832 6.71986V1.61212L23.3628 0.079794C22.5841 -0.328826 22.3894 0.931085 22.3894 1.61212L20.9292 5.18754L19.469 6.71986V1.61212L17.5221 5.18754L16.5487 11.8276L14.115 18.9785V11.8276L12.6549 6.71986L9.73451 9.27374L6.32743 5.18754V9.27374L4.86726 14.3815V18.9785L2.92035 20V15.9138Z"
+                                    fill="url(#paint0_linear_1_1577)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_1_1577" x1="27" y1="-14" x2="28" y2="19.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF35A2" />
+                                        <stop offset="1" stop-color="#FF35A2" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <button class="btn4"> Buy </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mb-col d-flex  justify-content-center">
+                        <p class="content1">
+                            Manage your <br> portfolio <br> anywhere, <br> anytime.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 ct-col ">
+                        <p class="content2">
+                            Jiko has a variety of <br> features that make it <br> the best place to start <br>
+                            investment
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="port">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="port-left-item">
+                            <img class="img-fluid" src="./assets/img/Asset 1@3x 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="posit d-flex justify-content-center">
+                            <div class="posit">
+                                <div class="port-right-item ">
+                                    <h5> Manage your portfolio </h5>
+                                    <p>Manage your investments on desktop or on-the-go with the Jiko app for iOS or
+                                        Android.</p>
+                                    <div class="port-abs">
+                                        <img src="./assets/img/mavi.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="posit">
+                            <div class="port-right-item ">
+                                <h5> Vault protection</h5>
+                                <p>Protection against full data encryption, cryptocurrency cold storage, and compliance
+                                    with PCI DSS standards to safeguard your funds</p>
+                                <div class="port-abs">
+                                    <img src="./assets/img/Group 376.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="posit">
+                            <div class="port-right-item ">
+                                <h5> Instant Buys</h5>
+                                <p>Buy with a credit card, debit card, Google Pay or bank transfer</p>
+                                <div class="port-abs">
+                                    <img src="./assets/img/Group 376 (1).png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="app">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 align-items-end">
+                        <div class="app-item">
+                            <h4>
+                                Trusted & <br> Transparent
+                            </h4>
+                            <p>
+                                Jiko is fully reserved. Unlike banks, we don’t loan out your money. We publish our
+                                holdings and obligations in real time.
+                            </p>
+                            <div class="btn-flex">
+                                <a href="#"> <img src="./assets/img/appstore.png" alt=""> </a>
+                                <a href="#"> <img src="./assets/img/appstore (1).png" alt=""> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="right-item">
+                            <img class="img-fluid" src="./assets/img/Mask Group.png" alt="">
+                            <div class="img-abs">
+                                <img src="./assets/img/Ellipse 40.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="register">
+            <div class="register-title">
+                <h2>
+                    Get started in minutes
+                </h2>
+                <p>Jiko supports a variety of the most popular digital currencies.</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="register-item">
+                            <img src="./assets/img/Illustration 1.png">
+                            <span> 1. Register</span>
+                            <p>Download Jiko mobile app or <br> sign up in website</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="register-item">
+                            <img src="./assets/img/Illustration 2.png" alt="">
+                            <span>2. Verify Account</span>
+                            <p class="two">Verify your identity with one of <br> our trusted verification partners</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="register-item">
+                            <img src="./assets/img/Illustration 3.png">
+                            <span>3. Start buying & selling</span>
+                            <p>Buy, sell and swap <br> digital assets 24/7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="partner">
+            <h2> Our Partners </h2>
+            <div class="container">
+                <div class="swiper mySwiper swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./assets/img/image 21.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/image 20.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/image 22.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/image 20.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/image 22.png" alt=""></div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="join">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="left-item">
+                            <span>Get News <br> in Jiko <br> Community</span>
+                            <p>We will help you to start learning investing</p>
+                            <a href="#" class="join-btn">
+                                Join Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="right-item">
+                            <img src="./assets/img/Asset 2@3x 1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <div class="logo">
+                        <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.6497 14.8301L16.0016 15.4645L13.4869 17.9203L10.9723 20.374L13.4869 22.8305L16.0016 25.2857L18.5169 27.7401L19.8598 29.0584H24.887L23.5441 27.7435L21.0281 25.2891L18.5169 22.8305L16.0023 20.374L18.5169 17.9203L19.4831 16.9747L16.6497 14.8301ZM26.615 9.99306L25.4524 11.1285H25.4672L24.8884 11.6938L23.5455 13.0086L23.2628 13.2847L23.1215 13.4186L19.4817 16.9733L16.6546 14.8281L20.4287 11.1285L24.2021 7.4275L24.2078 7.43164L26.0298 5.65224L32.0048 9.02053V36H14.2227V32.5275H28.4434V11.0263L26.6143 9.99099L26.615 9.99306ZM-0.000183105 11.1285V36H10.667V10.8476L7.11124 12.6104V32.5275H3.55553V11.0249L15.9995 4.00813L20.2294 6.39423L22.8282 3.84938L15.9995 0L7.99893 4.50923L-0.000183105 9.01846V11.1285Z"
+                                fill="#005FFE" />
+                        </svg>
+                        <a class="logo" href="#"> JIKO </a>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                    <nav>
+                        <ul>
+                            <li><a href="#"> Products </a></li>
+                            <li><a href="#"> Learn</a></li>
+                            <li><a href="#"> Company </a></li>
+                            <li><a href="#"> Help </a></li>
+                            <li><a href="#"> Legal </a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-4 d-flex justify-content-end">
+                    <span>© Jiko 2021. All Right Reserved </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,917 @@
+// reset code
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+    list-style: none !important;
+    outline: none;
+
+    body {
+        #header {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            margin-top: 52px;
+
+            .container-fluid {
+                max-width: 1460px;
+
+                .header-col {
+                    .logo-section {
+                        display: flex;
+                        align-items: center;
+
+                        svg {
+                            margin-right: 8px;
+                        }
+
+                        .logo {
+                            font-family: Nirmala UI;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 24px;
+                            letter-spacing: 0.5px;
+                            color: #005FFE;
+                        }
+                    }
+                }
+
+                .nav-col {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    nav {
+                        ul {
+                            margin: 0;
+                            padding: 0;
+                            align-items: center;
+                            display: flex;
+
+                            li {
+                                margin-left: 50px;
+                                white-space: nowrap;
+
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+
+                                a {
+                                    font-family: Work Sans;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 15px;
+                                    line-height: 24px;
+                                    letter-spacing: -0.22px;
+                                    color: #2128BD;
+                                }
+
+                                button {
+
+                                    background: rgba(1, 96, 254, 0.1);
+                                    border-radius: 26.4px;
+                                    width: 134px;
+                                    height: 50px;
+                                    padding: 13px 25px;
+                                    color: #0160FE;
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            #banner {
+                .container {
+                    .banner-row {
+                        .banner-col {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .banner-left {
+                            padding-top: 115px;
+
+                            h1 {
+                                font-family: Spartan;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 72px;
+                                line-height: 82px;
+                                white-space: nowrap;
+                                letter-spacing: -5.97px;
+                            }
+
+                            p {
+                                font-family: Work Sans;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 24px;
+                                line-height: 26px;
+                                letter-spacing: -0.4px;
+                                color: #130F49;
+                                opacity: 0.9;
+                                margin-top: 33px;
+                                margin-bottom: 65px;
+                            }
+
+                            .banner-btn {
+                                background: #4F86FF;
+                                border-radius: 20px;
+                                width: 182px;
+                                height: 79px;
+                                flex: none;
+                                order: 0;
+                                flex-grow: 0;
+                                font-family: Work Sans;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 130%;
+                                text-align: center;
+                                border: none;
+                                color: #FFFFFF;
+                            }
+                        }
+
+                        .banner-right {
+                            padding-top: 90px;
+                            position: relative;
+
+                            .phone {
+                                width: 542px;
+                                height: 542px;
+                            }
+
+                            .abs-img {
+
+                                z-index: -1;
+                                position: absolute;
+                                bottom: 0;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            #slider {
+                padding-top: 144px;
+
+
+                .container {
+                    max-width: 1050px;
+
+                    .swiper {
+                        .swiper-wrapper {
+                            padding-bottom: 56px;
+
+                            .swiper-slide {
+                                display: flex;
+                                justify-content: center;
+
+                                .swiper-item {
+                                    background: #FFFFFF;
+                                    border: 1px solid #CDE4F9;
+                                    box-sizing: border-box;
+                                    border-radius: 24px;
+                                    width: 300px;
+                                    height: 200px;
+                                    position: relative;
+
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        right: 15px;
+                                        background: url("../img/color.png");
+                                        width: 96px;
+                                        bottom: 15px;
+                                        height: 96px;
+                                        background-repeat: no-repeat;
+                                    }
+
+                                    .swip-title {
+
+                                        font-family: Work Sans;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 20px;
+                                        line-height: 23px;
+                                        padding-top: 24px;
+                                        display: block;
+                                        color: #0F1C49;
+
+                                        padding-left: 24px;
+                                    }
+
+                                    .swip-content {
+                                        font-family: Work Sans;
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        padding-top: 12px;
+                                        padding-left: 24px;
+                                        letter-spacing: 0.0052em;
+
+                                        color: #130F49;
+                                    }
+
+                                    .swip-btn {
+                                        font-family: Work Sans;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 18px;
+                                        line-height: 100%;
+                                        padding-top: 39px;
+                                        display: block;
+                                        padding-left: 24px;
+
+                                        letter-spacing: 0.0052em;
+
+                                        color: #4F86FF;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            #table {
+                position: relative;
+                padding-top: 72px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    background-size: cover;
+                    z-index: -1;
+                    width: 100%;
+                    height: 900px;
+                    background-repeat: no-repeat;
+                    background-image: url('../img/Rectangle\ 151.png');
+
+                }
+
+                .table-title {
+                    text-align: center;
+                    letter-spacing: -2.32px;
+                    font-family: Spartan;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 48px;
+                    line-height: 58px;
+                    color: #0F1C49;
+                    margin-bottom: 44px;
+                }
+
+                .container {
+                    max-width: 1040px;
+
+                    .cs-table {
+                        height: 561px;
+                        border-radius: 24px;
+                        background: #fff;
+
+                        .tb-header {
+                            padding-top: 40px;
+                            margin-left: 32px;
+                            margin-right: 32px;
+                            display: flex;
+                            padding-bottom: 20px;
+                            border-bottom: 0.8px solid #CDE4F9;
+
+                            span {
+                                font-family: Work Sans;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 24px;
+
+                                letter-spacing: -0.078px;
+
+                                color: #88A1BE;
+                            }
+
+                            .one {
+                                padding-right: 222px;
+                            }
+
+                            .two {
+                                padding-right: 178px;
+                            }
+
+                            .three {
+                                padding-right: 100px;
+                            }
+
+                            .four {
+                                padding-right: 91px;
+                            }
+                        }
+
+                        .tb-row {
+                            display: flex;
+                            align-items: center;
+                            margin-left: 32px;
+                            margin-right: 32px;
+                            padding-top: 35px;
+                            padding-bottom: 30px;
+                            border-bottom: 0.8px solid #CDE4F9;
+
+                            .bir {
+                                font-family: Work Sans;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 18px;
+                                line-height: 24px;
+                                letter-spacing: -0.4px;
+                                color: #130F49;
+
+                                img {
+                                    width: 36px;
+                                    height: 36px;
+                                    margin-left: 15px;
+                                    margin-right: 0;
+                                }
+
+                                .iki {
+                                    font-family: Work Sans;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 18px;
+                                    line-height: 24px;
+                                    letter-spacing: -0.4px;
+
+                                    .btc {
+                                        font-family: Work Sans;
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 18px;
+                                        line-height: 24px;
+                                        text-transform: uppercase;
+                                        margin-right: 125px;
+                                        letter-spacing: -0.4px;
+
+                                        &.btc2 {
+                                            margin-right: 100px;
+                                        }
+
+                                        &.btc3 {
+                                            margin-right: 119px;
+                                        }
+
+                                        &.btc4 {
+                                            margin-right: 95px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .rp {
+                                font-family: Work Sans;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 18px;
+                                line-height: 24px;
+                                letter-spacing: -0.4px;
+                                color: #130F49;
+                                margin-right: 90px;
+
+                                &.rp2 {
+                                    margin-right: 94px;
+                                }
+
+                                &.rp3 {
+                                    margin-right: 133px;
+                                }
+
+                                &.rp4 {
+                                    margin-right: 136px;
+                                }
+                            }
+
+                            .grn {
+                                margin-right: 122px;
+                                font-family: Work Sans;
+
+                                &.grn-2 {
+                                    margin-right: 127px;
+                                }
+
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 18px;
+                                line-height: 24px;
+                                letter-spacing: -0.4px;
+                                color: #12D790;
+                            }
+
+                            button {
+                                margin-left: 70px;
+                                background: #4F86FF;
+                                border-radius: 12px;
+                                width: 82px;
+                                display: flex;
+                                border: none;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 12px 24px;
+                                height: 47px;
+                                font-family: Work Sans;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 130%;
+                                text-align: center;
+                                color: #FFFFFF;
+
+                                &.btn2 {
+                                    margin-left: 75px;
+                                }
+
+                                &.btn3 {
+                                    margin-left: 80px;
+                                }
+
+                                &.btn4 {
+                                    margin-left: 79px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            #text {
+                padding-top: 160px;
+
+                .container {
+                    .row {
+                        .col-lg-6 {
+                            .content1 {
+                                font-family: Spartan;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 52px;
+                                line-height: 64px;
+                                letter-spacing: -2.32px;
+                                color: #130F49;
+                                position: relative;
+                                top: -20px;
+                            }
+
+                            .content2 {
+                                font-family: Work Sans;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 24px;
+                                line-height: 38px;
+
+
+                                letter-spacing: -1px;
+
+                                color: #130F49;
+
+                                opacity: 0.4;
+                            }
+                        }
+
+                        .ct-col {
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                        }
+                    }
+                }
+            }
+
+            #port {
+                padding-top: 110px;
+
+                .container {
+                    .row {
+                        .col-lg-6 {
+                            .port-left-item {
+                                width: 733px;
+                                height: 533px;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .posit {
+                                display: flex;
+                                justify-content: center;
+
+                                .port-right-item {
+                                    position: relative;
+
+                                    h5 {
+
+                                        font-family: Spartan;
+                                        font-style: normal;
+                                        font-weight: bold;
+                                        font-size: 24px;
+                                        line-height: 34px;
+                                        letter-spacing: -0.01em;
+                                        color: #130F49;
+                                        margin-bottom: 20px;
+                                    }
+
+                                    p {
+                                        font-family: Work Sans;
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 20px;
+                                        line-height: 28px;
+                                        margin-bottom: 65px;
+
+                                        letter-spacing: -0.01em;
+
+                                        color: #130F49;
+
+                                        opacity: 0.4;
+
+                                        width: 265px;
+
+                                        &.cnt2 {
+                                            width: 309px;
+                                        }
+
+                                        &.cnt3 {
+                                            width: 265px;
+                                        }
+                                    }
+
+                                    .port-abs {
+                                        position: absolute;
+                                        top: -14px;
+                                        left: -80px;
+
+                                        img {
+                                            width: 60px;
+                                            height: 60px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #app {
+                padding-top: 140px;
+
+                .container {
+                    .row {
+                        .col-lg-6 {
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+
+                            .app-item {
+                                h4 {
+                                    font-family: Spartan;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 52px;
+                                    line-height: 64px;
+                                    /* or 123% */
+
+                                    letter-spacing: -2.32px;
+
+                                    color: #130F49;
+                                }
+
+                                p {
+                                    font-family: Work Sans;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 24px;
+                                    line-height: 38px;
+                                    /* or 158% */
+
+                                    letter-spacing: -1px;
+
+                                    color: #130F49;
+
+                                    opacity: 0.4;
+                                    width: 357px;
+                                    padding-top: 36px;
+                                    padding-bottom: 56px;
+                                }
+
+                                .btn-flex {
+                                    display: flex;
+
+                                    a {
+                                        margin-right: 22px;
+                                    }
+                                }
+                            }
+
+                            .right-item {
+                                display: flex;
+                                justify-content: center;
+
+                                .img-abs {
+                                    position: absolute;
+                                    bottom: 0px;
+                                    z-index: -1;
+
+                                    img {
+                                        width: 515px;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #register {
+                padding-top: 200px;
+
+                .register-title {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h2 {
+                        font-family: Spartan;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 52px;
+                        line-height: 64px;
+                        text-align: center;
+                        letter-spacing: -2.32px;
+                        color: #130F49;
+                        padding-bottom: 20px;
+                    }
+
+                    p {
+                        font-family: Work Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 24px;
+                        line-height: 38px;
+                        text-align: center;
+                        letter-spacing: -1px;
+                        color: #130F49;
+                        opacity: 0.4;
+                    }
+                }
+
+                .container {
+                    padding-left: 150px;
+                    padding-right: 150px;
+
+                    .row {
+                        .col-lg-4 {
+                            display: flex;
+                            justify-content: center;
+
+                            .register-item {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                padding-top: 90px;
+                                text-align: center;
+
+                                img {
+                                    width: 166px;
+                                    height: 166px;
+                                }
+
+                                span {
+                                    padding-top: 12px;
+                                    padding-bottom: 16px;
+                                    font-family: Spartan;
+                                    white-space: nowrap;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 24px;
+                                    line-height: 34px;
+                                    /* identical to box height, or 142% */
+
+                                    text-align: center;
+                                    letter-spacing: -0.01em;
+
+                                    color: #130F49;
+                                }
+
+                                p {
+                                    font-family: Work Sans;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 20px;
+                                    line-height: 28px;
+                                    /* or 140% */
+
+                                    text-align: center;
+                                    letter-spacing: -0.01em;
+
+                                    color: #130F49;
+
+                                    opacity: 0.4;
+
+                                    &.two {
+                                        width: 310px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #partner {
+                padding-top: 180px;
+
+                h2 {
+                    text-align: center;
+                    font-family: Spartan;
+                    padding-bottom: 90px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 52px;
+                    line-height: 64px;
+
+                    text-align: center;
+                    letter-spacing: -2.32px;
+
+                    color: #130F49;
+                }
+
+                .container {
+                    .swiper {
+                        .swiper-slide {
+                            display: flex;
+                            justify-content: center;
+                            padding-bottom: 58px;
+                        }
+                    }
+                }
+            }
+
+            #join {
+                padding-top: 220px;
+
+                .container {
+                    .row {
+                        .col-lg-6 {
+                            .left-item {
+                                span {
+                                    font-family: Spartan;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 52px;
+                                    line-height: 64px;
+                                    /* or 123% */
+
+                                    letter-spacing: -2.32px;
+
+                                    color: #130F49;
+                                }
+
+                                p {
+                                    font-family: Work Sans;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 24px;
+                                    line-height: 38px;
+                                    /* identical to box height, or 158% */
+
+                                    letter-spacing: -1px;
+                                    margin-top: 30px;
+                                    color: #130F49;
+                                    margin-bottom: 58px;
+                                    opacity: 0.4;
+                                }
+
+                                .join-btn {
+                                    color: #fff;
+
+                                    background: #4F86FF;
+                                    border-radius: 20px;
+                                    width: 175px;
+                                    height: 79px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-family: Work Sans;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                    line-height: 130%;
+                                    /* or 23px */
+
+                                    text-align: center;
+
+                                    color: #FFFFFF;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #footer {
+            padding-top: 190px;
+            padding-bottom: 69px;
+
+            .container-fluid {
+                max-width: 1460px;
+                height: 36px;
+
+                .col-4 {
+                    .logo {
+                        display: flex;
+                        align-items: center;
+
+                        svg {
+                            margin-right: 8px;
+                        }
+
+                        .logo {
+                            font-family: Nirmala UI;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 24px;
+                            letter-spacing: 0.5px;
+                            color: #005FFE;
+                        }
+                    }
+                }
+
+                .col-4 {
+                    nav {
+                        ul {
+                            height: 36px;
+                            margin: 0;
+
+                            display: flex;
+                            align-items: center;
+
+                            li {
+                                margin-right: 60px;
+
+                                a {
+                                    font-family: Work Sans;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 15px;
+                                    line-height: 24px;
+                                    /* identical to box height, or 160% */
+
+                                    letter-spacing: -0.22px;
+
+                                    color: #130F49;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .col-4 {
+                    span {
+                        font-family: Work Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 24px;
+                        /* identical to box height, or 160% */
+
+                        letter-spacing: -0.22px;
+
+                        color: #130F49;
+
+                        opacity: 0.4;
+                    }
+                }
+
+            }
+        }
+    }
+}
