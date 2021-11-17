@@ -59,7 +59,7 @@
           align-items: center;
 }
 
-* body #header .container-fluid .nav-col nav ul {
+* body #header .container-fluid .nav-col nav > ul {
   margin: 0;
   padding: 0;
   -webkit-box-align: center;
@@ -70,16 +70,64 @@
   display: flex;
 }
 
-* body #header .container-fluid .nav-col nav ul li {
+* body #header .container-fluid .nav-col nav > ul > li {
   margin-left: 50px;
   white-space: nowrap;
+  position: relative;
 }
 
-* body #header .container-fluid .nav-col nav ul li:last-child {
+* body #header .container-fluid .nav-col nav > ul > li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+* body #header .container-fluid .nav-col nav > ul > li .list-two {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+  background: skyblue;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 !important;
+  left: 0;
+  width: 200px;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+}
+
+* body #header .container-fluid .nav-col nav > ul > li .list-two li {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+* body #header .container-fluid .nav-col nav > ul > li .list-two li:hover {
+  background: rgba(102, 51, 153, 0.24);
+  cursor: pointer;
+}
+
+* body #header .container-fluid .nav-col nav > ul > li .list-two li:last-child {
+  border-bottom: none;
+}
+
+* body #header .container-fluid .nav-col nav > ul > li .list-two li a {
+  color: #000;
+}
+
+* body #header .container-fluid .nav-col nav > ul > li:last-child {
   margin-right: 0;
 }
 
-* body #header .container-fluid .nav-col nav ul li a {
+* body #header .container-fluid .nav-col nav > ul > li > a {
   font-family: Work Sans;
   font-style: normal;
   font-weight: 500;
@@ -89,7 +137,7 @@
   color: #2128BD;
 }
 
-* body #header .container-fluid .nav-col nav ul li button {
+* body #header .container-fluid .nav-col nav > ul > li button {
   background: rgba(1, 96, 254, 0.1);
   border-radius: 26.4px;
   width: 134px;
@@ -97,6 +145,12 @@
   padding: 13px 25px;
   color: #0160FE;
   border: none;
+}
+
+* body main #banner {
+  margin: 0 auto;
+  max-width: 1600px;
+  position: relative;
 }
 
 * body main #banner .container .banner-row .banner-col {
@@ -113,6 +167,7 @@
 
 * body main #banner .container .banner-row .banner-left {
   padding-top: 115px;
+  position: relative;
 }
 
 * body main #banner .container .banner-row .banner-left h1 {
@@ -161,6 +216,24 @@
   color: #FFFFFF;
 }
 
+* body main #banner .container .banner-row .banner-left .abs {
+  position: absolute;
+  bottom: 38%;
+  right: 74px;
+  width: 86px;
+  background: #fff;
+  border-radius: 50%;
+  height: 86px;
+}
+
+* body main #banner .container .banner-row .banner-left .abs1 {
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: -76px;
+}
+
 * body main #banner .container .banner-row .banner-right {
   padding-top: 90px;
   position: relative;
@@ -177,8 +250,35 @@
   bottom: 0;
 }
 
+* body main #banner .svg {
+  position: absolute;
+  bottom: 270px;
+  left: 50px;
+}
+
+* body main #banner .svg2 {
+  position: absolute;
+  right: 110px;
+  bottom: 280px;
+}
+
+* body main #banner .svg3 {
+  position: absolute;
+  top: 90px;
+  right: 230px;
+}
+
+* body main #banner .svg4 {
+  position: absolute;
+  right: 240px;
+  bottom: -100px;
+}
+
 * body main #slider {
   padding-top: 144px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
 * body main #slider .container {
@@ -255,6 +355,11 @@
   padding-left: 24px;
   letter-spacing: 0.0052em;
   color: #4F86FF;
+}
+
+* body main #slider .svg {
+  position: absolute;
+  left: 200px;
 }
 
 * body main #table {
@@ -422,6 +527,7 @@
 * body main #table .container .cs-table .tb-row .grn {
   margin-right: 122px;
   font-family: Work Sans;
+  color: #FF35A2;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -432,6 +538,11 @@
 
 * body main #table .container .cs-table .tb-row .grn.grn-2 {
   margin-right: 127px;
+  color: #FF35A2;
+}
+
+* body main #table .container .cs-table .tb-row .grn.grn-red {
+  color: #FF35A2;
 }
 
 * body main #table .container .cs-table .tb-row button {
@@ -469,11 +580,14 @@
 }
 
 * body main #table .container .cs-table .tb-row button.btn4 {
-  margin-left: 79px;
+  margin-left: 73px;
 }
 
 * body main #text {
   padding-top: 160px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
 * body main #text .container .row .col-lg-6 .content1 {
@@ -515,8 +629,23 @@
           justify-content: flex-end;
 }
 
+* body main #text .svg {
+  position: absolute;
+  right: 100px;
+  bottom: 220px;
+}
+
+* body main #text .svg2 {
+  position: absolute;
+  left: 150px;
+  bottom: 120px;
+}
+
 * body main #port {
   padding-top: 110px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
 * body main #port .container .row .col-lg-6 .port-left-item {
@@ -585,8 +714,22 @@
   height: 60px;
 }
 
+* body main #port .svg {
+  position: absolute;
+  left: 120px;
+}
+
+* body main #port .svg2 {
+  position: absolute;
+  right: 90px;
+  top: 430px;
+}
+
 * body main #app {
   padding-top: 140px;
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 * body main #app .container .row .col-lg-6 {
@@ -654,8 +797,23 @@
   width: 515px;
 }
 
+* body main #app .svg {
+  position: absolute;
+  bottom: 295px;
+  left: 200px;
+}
+
+* body main #app .svg2 {
+  position: absolute;
+  right: 100px;
+  bottom: 15px;
+}
+
 * body main #register {
   padding-top: 200px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
 * body main #register .register-title {
@@ -764,8 +922,17 @@
   width: 310px;
 }
 
+* body main #register .svg {
+  position: absolute;
+  top: 230px;
+  right: 390px;
+}
+
 * body main #partner {
   padding-top: 180px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
 * body main #partner h2 {
@@ -791,8 +958,28 @@
   padding-bottom: 58px;
 }
 
+* body main #partner .svg {
+  position: absolute;
+  top: 100px;
+  right: 300px;
+}
+
+* body main #partner .svg2 {
+  position: absolute;
+  left: 110px;
+}
+
+* body main #partner .svg3 {
+  position: absolute;
+  left: 160px;
+  bottom: 240px;
+}
+
 * body main #join {
+  position: relative;
   padding-top: 220px;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
 * body main #join .container .row .col-lg-6 .left-item span {
@@ -843,6 +1030,28 @@
   /* or 23px */
   text-align: center;
   color: #FFFFFF;
+}
+
+* body main #join .svg {
+  position: absolute;
+  top: 200px;
+  right: 200px;
+}
+
+* body main #join .svg2 {
+  position: absolute;
+  left: 60px;
+}
+
+* body main #join .svg3 {
+  position: absolute;
+  bottom: 320px;
+  left: 70px;
+}
+
+* body main #join .svg4 {
+  position: absolute;
+  right: 100px;
 }
 
 * body #footer {
